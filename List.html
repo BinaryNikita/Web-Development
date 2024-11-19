@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists In Html</title>
+    <style>
+        .container {
+            text-align: center;
+            display: flex;
+        }
+
+        .Ordered {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: aqua;
+            border-style: outset;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            width: 200px;
+            cursor: grab;
+        }
+
+        .Unordered {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(220, 147, 147);
+            border-style: groove;
+            width: 200px;
+            cursor: grab;
+
+
+        }
+
+        ol {
+            list-style: lower-alpha;
+        }
+
+        ul {
+            list-style: square;
+        }
+
+        .Ordered:hover {
+            background-color: rgb(205, 214, 47);
+            color: brown;
+        }
+
+        .Unordered:hover {
+            background-color: rgb(29, 192, 46);
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Lists Types</h1>
+
+    <div class="container">
+        <div class="Ordered">
+            <h3>Ordered Lists</h3>
+            <ol type="lowercase">
+                <li>Laptop</li>
+                <li>Desktop Computer</li>
+                <li>Supercomputer</li>
+            </ol>
+        </div>
+        <div class="Unordered">
+            <h3>Uordered Lists</h3>
+            <ul>
+                <li>Laptop</li>
+                <li>Desktop Computer</li>
+                <li>Supercomputer</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

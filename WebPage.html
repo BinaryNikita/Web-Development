@@ -1,0 +1,105 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Courses</li>
+                <li>Contact Us</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="heading">
+                <h1>Animation</h1>
+            </div>
+<div class="intro">
+    <p>
+        In CSS, animation refers to the process of gradually changing the style properties of an element over a specified duration. This allows for the creation of visually appealing effects such as movement, fading, and transformation without the need for JavaScript or external libraries.
+    </p>
+    <h3>Here are some characteristics of animation:
+    </h3>
+    <ol>
+        <li><b>Movement: </b>  Animation involves creating the illusion of motion.
+        </li>
+        <li> <b>Visual Appeal:</b> It enhances visuals with dynamic elements.</li>
+        <li><b>Storytelling:</b>Animation can tell stories through visuals.</li>
+        <li><b>Engagement: </b> It captivates and entertains viewers.</li>
+        <li><b>Creativity: </b> Animation allows for imaginative expression.</li>
+    </ol>
+    
+</div>
+<div class="rules">
+    <h2>Rules for using animation in CSS with examples:</h2>
+    <div class="rule">
+        <p><strong>1. Define Keyframes:</strong>Set up animation stages with @keyframes.</p>
+<div class="example">
+    <pre>@keyframes slide-in {
+        from { transform: translateX(-100%); }
+        to { transform: translateX(0); }
+      }
+      </pre>
+</div>
+    </div>
+
+    <div class="rule">
+        <p><strong>2. Select the Target Element:</strong>Choose the element to animate</p>
+<div class="example">
+    <pre>.box {
+        animation-name: slide-in;
+      }
+      
+      </pre>
+</div>
+    </div>
+    <div class="rule">
+        <p><strong>3. Set Animation Properties:</strong>Specify duration, timing function, and other properties.</p>
+<div class="example">
+    <pre>.box {
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.5s;
+        animation-iteration-count: infinite;
+      }      
+      </pre>
+</div>
+    </div>
+    <div class="rule">
+        <p><strong>4. Apply Animation: </strong>Trigger the animation on the selected element.</p>
+
+<div class="example">
+    <pre>.box {
+        animation: slide-in 1s ease-in-out 0.5s infinite;
+      }      
+      </pre>
+</div>
+    </div>
+    <div class="rule">
+        <p><strong>5. Keep it Simple</strong> Stick to straightforward animations to maintain performance and usability.
+        </p>
+    </div>
+
+</div>
+        </section>
+    </main>
+    <footer>
+        <div class="socialmedia">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>LinkedIn</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

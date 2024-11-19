@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submit Form</title>
+  <style>
+    /* Add some basic styling for the form */
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    label, input {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form id="myForm" action="https://formspree.io/f/your-formspree-endpoint" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="_replyto" required>
+    
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile" required>
+    
+    <label for="prescription">Prescription Photo:</label>
+    <input type="file" id="prescription" name="prescription" accept="image/*" required>
+    
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    const form = document.getElementById('myForm');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+
+      // Prepare the email message body
+      const emailBody = `Name: ${form.name.value}\nEmail: ${form.email.value}\nMobile Number: ${form.mobile.value}`;
+
+      // Send the email using a mailto link
+      const mailtoLink = `mailto:caresuppmedical@gmail.com?subject=Prescription Submission&body=${encodeURIComponent(emailBody)}`;
+      window.location.href = mailtoLink;
+    });
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+       .shadow {
+          display: flex;
+          align-items: center;
+        }
+        span{
+            color: rgb(241, 207, 127);
+            font-size: 100px;
+            font-family:fantasy;
+            font-weight: bolder;
+            animation: glow 2s alternate infinite;
+
+        }
+        img{
+            filter: drop-shadow(0 0 10px #e9a822);
+            animation: glow 2s alternate infinite;
+        }
+        @keyframes glow{
+            0%{
+                filter: drop-shadow(0 0 5px #e9a822);
+            }
+            100%{
+                filter: drop-shadow(0 0 25px #e9a822);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="shadow">
+        <img src="Shadow.png" alt="">
+      <Span>Bole to mast</Span>  
+      
+    </div>  
+</body>
+</html>

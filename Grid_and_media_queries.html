@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 600px;
+            background-color: rgb(237, 231, 64);
+            display: inline-grid;
+            /* grid-template-rows: 50px 50px 50px 50px 50px;
+            grid-template-columns: 200px 200px 200px ; */
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            /* column-gap: 30px;
+            row-gap: 30px; */
+            grid-gap: 10px;
+            place-items: center;
+        }
+        .items{
+            height: 50px;
+            width: 100px;
+            background-color: rgb(7, 46, 33);
+            border: 2px solid white;
+            text-align: center;
+        }
+        /* .item1{
+            grid-column: 1/4;
+            color: aliceblue;
+            font-size: 30px;
+        } */
+        /* .item2{
+            grid-row: 2/4;
+            color: aliceblue;
+            font-size: 30px;
+        } */
+        .item3{
+            place-self: end;
+            color: aliceblue;
+            font-size: 30px;
+        }
+        .cont{
+            display: inline-grid;
+        }
+        @media (width:400px) {
+            .container{
+            background-color: red;
+        }
+    }
+    @media (min-width:300px) and (max-width:500px){
+        .items{
+            background-color: blueviolet;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">1</div>
+        <div class="items item2">2</div>
+        <div class="items item3">3</div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </div>
+    <div class="cont">
+        <div class="items item1">1</div>
+        <div class="items item2">2</div>
+        <div class="items item3">3</div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </div>
+</body>
+</html>

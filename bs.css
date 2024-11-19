@@ -1,0 +1,106 @@
+.rounded #logo {
+    padding-left: 5px;
+    border-radius: 50%;
+  }
+  .nav .nav-item :hover {
+    box-shadow: 1px 1px 5px grey;
+  }
+  .collapse .nav-item:hover {
+    text-decoration: white underline;
+  }
+  .container .col img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer {
+    background-color: #d9e9f4;
+  }
+  .footer .foot {
+    display: inline-flex;
+    margin: 20px;
+  }
+  .footer li {
+    color: rgb(130, 129, 129);
+    list-style-type: none;
+  }
+  .footer a {
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .footer a:hover {
+    text-decoration: grey underline;
+  }
+  .footer h5 {
+    color: rgb(61, 61, 61);
+    display: block;
+  }
+  .foot .socialmedia li {
+    display: inline;
+  }
+  .d-flex input {
+    width: 300px;
+  }
+
+  .doctor {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 10% 0px 20%;
+    border-radius: 10px;
+    height: 200px;e
+  }
+  @media (max-width:450px) {
+    .doctor {
+      margin: 0px 5%;
+      height: 100%;
+    }
+  }
+  .doctor h1 {
+    font-size: 24px;
+    color: rgb(28, 29, 30);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: fontAnimation 4s linear 0.1s;
+  }
+  .btn-appointment {
+    height: 30%;
+    padding: 10px;
+  }
+  .btn-appointment button {
+    margin-top: 5px;
+    border-radius: 0px;
+  }
+  .Appointment-form {
+    display: inline;
+  }
+  .Appointment-form #select-location {
+    padding: 10px;
+    margin: 10px;
+    color: #666666;
+    background-color: rgb(246, 243, 243);
+  }
+  .doctor #baA {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+.featured-brands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.brand-card{    
+    height: 100px;
+    width: 100px;
+}
+.brand-card img{
+    width: 100%;
+    height: 100%;
+}
+.brand-card :hover{
+    height: 110px;
+    width:110px ;
+}
+.brand-head{
+    text-align: center;
+    color: grey;
+    font-size: 25px;
+    margin: 10px;
+}

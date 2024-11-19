@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+<style>
+  
+.div1{
+border: 5px inset black;
+padding: 10px;
+width: 400px;
+margin-bottom: 20px;
+background-color:yellow;
+border-top-left-radius: 50px;
+}
+.div2{
+    border: 5px solid black;
+    padding: 10px;
+    width: 400px;
+margin-bottom: 20px;
+border-radius: 25% 10%;
+background-color: yellow;
+}
+.div3{
+    border: 5px dashed black;
+    padding: 10px;
+    width: 400px;
+    border-radius: 10% 30% 50% 70%;
+margin-bottom: 20px;
+
+background-color: yellow;
+}
+.div4{
+    border: 5px outset black;
+    padding: 10px;
+    width: 400px;
+    border-radius: 10% / 50%;
+margin-bottom: 20px;
+
+background-color: yellow;
+}
+.div5{
+    border: 5px groove black;
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px 100px / 120px;
+margin-bottom: 20px;
+
+background-color: yellow;
+}
+.div6{
+    border: 5px ridge black;
+    padding: 10px;
+    width: 400px;
+    border-radius: 50% 20% / 10% 40%;
+margin-bottom: 20px;
+
+background-color: yellow;
+}
+.div7{
+    border: 5px double black;
+    padding: 10px;
+    width: 400px;
+margin-bottom: 20px;
+
+background-color: yellow;
+}
+.div8{
+    border: 5px dotted black;
+    padding: 10px;
+    width: 400px;
+margin-bottom: 20px;
+padding-left: 10%;
+background-color: yellow;
+}
+</style>
+</head>
+<body>
+    <h1>Random Heading</h1>
+    <div class="conta">
+    <div class="div1"> <h2>Inset</h2>
+        The inset value for the border property is used to create an "inset" or pressed effect on the border of an element. It gives the appearance of the border being pushed into the element.
+       
+    </div>
+    <div class="div2"> <h2>Solid</h2>
+        This style creates a solid, continuous line for the border. It's the most common border style used.</div>
+    <div class="div3"> <h2>Dashed</h2>
+        This style creates a series of short dashes for the border. Provides a dashed appearance to the border.</div>
+    <div class="div4"><h2>Outset</h2>
+        This style creates a 3D outset border effect. Gives the appearance of popping out from the page.    </div>
+        
+    <div class="div5"> <h2>Groove</h2>
+        This style creates a 3D grooved border effect. Gives the appearance of a carved groove.</div>
+    <div class="div6"> <h2>Ridge</h2>
+         This style creates a 3D ridged border effect. Gives the appearance of a raised ridge.</div>
+    <div class="div7"> <h2>Double-line</h2>
+        This style creates two parallel lines for the border. Creates a bold, double-line effect for the border.</div>
+    <div class="div8"><h2>Dotted</h2>
+        This style creates a series of dots for the border. Gives a dotted appearance to the border.    </div>
+</div>
+    <button>Click me</button>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: monospace;
+
+        }
+
+        .container {
+            background-color: rgb(204, 204, 204);
+            width: 300px;
+            /* height: 300px; */ */
+            padding-top: 20px;
+            padding-left: 50px;
+            color: rgb(0, 0, 0);
+            font-size: 19px;
+            margin-left: 350px;
+            margin-top: 150px;
+            /* border-radius: 20%; */
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+        }
+        .container p{
+            font-family: sans-serif;
+            font-size: larger;
+        }
+        .name{
+            
+            margin-bottom: 10px;
+        }
+        .email{
+           
+            margin-bottom: 10px;
+        }
+        .email input{
+            margin-left: 34px;
+        }
+        .pass{
+            
+            margin-bottom: 10px;
+        }
+        .submit{
+            color: aliceblue;
+            border: none;
+            padding:  8px 45px 8px 45px;
+            background-color: rgb(35, 36, 36);
+        }
+        .container form input{
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/server">
+            <p>Fill the above form</p>
+            <div class="name">
+            <label for="username">Username:</label>
+        
+                <input type="text" name="name" id="username" placeholder="Enter your name">
+            </div>
+            <div class="email">
+            <label for="email">Email:</label>
+         
+            <input type="email" name="email" id="email" placeholder="Enter you email">
+            </div>
+            <div class="pass">
+            <label for="password">Password:</label>
+           
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            </div>
+            <div>
+    <input type="checkbox" name="age" id="age" checked>
+    <label for="age">I am 18+</label>
+</div>
+<div>
+    <select name="profession" id="profession" >
+        <option>Select your option</option>
+        <option value="WebDev" selected>Web Developer </option>
+        <option value="SoftDev"> Software Developer</option>
+    </select>
+</div>
+<div>
+    <label for="area">Give you valuable feedback</label>
+    <br>
+    <textarea name="feedback" id="area" cols="10" rows="10"></textarea>
+</div>
+<div>
+    <label for="volume">Select you volume</label>
+<input type="range" min="0" max="100" name="volume" id="volume">
+</div>
+
+            <button class="submit"> Submit</button>
+            <button class="submit" type="reset" name="vol" step="15" value="30">Reset</button>
+    </div>
+    </form>
+   
+</body>
+
+</html>

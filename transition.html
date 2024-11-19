@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            height: 70px;
+            width:200px;
+            background-color: rgb(255, 47, 0);
+            border-radius: 20px;
+            transition:padding-right 2s ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1) 0.3s;
+            margin: 0px auto;
+        }
+        .box1:hover{
+            padding-right: 50px;
+        }
+        .box2{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(71, 48, 222);
+            margin: 0px auto;
+            margin-top: 10px;
+            transition:margin-top 3s linear 0.2s ;
+        }
+        .box2:hover{
+            margin-top: 300px;
+        }
+    </style>
+</head>
+<body>
+   <div class="box1"></div>
+   <div class="box2"></div>
+</body>
+</html>

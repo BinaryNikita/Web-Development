@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 600px;
+            background-color: antiquewhite;
+            text-align: center;
+            display:flex;
+            /* flex-direction: row-reverse; */
+            /* justify-content:space-between; */
+            /* flex-wrap: wrap;
+            align-items: flex-end; */
+ 
+        }
+        #blue{
+            align-self: flex-start;
+            flex-basis: 100px;
+            flex-grow:1 ;
+        }
+        #yellow{
+            flex-shrink: 7;
+            fl
+        }
+        .container div{
+            height: 50px;
+            width: 200px;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="background-color: violet; ">Violet</div>
+        <div style="background-color: indigo;">Indigo</div>
+        <div id="blue" style="background-color: blue; height: 100px;">Blue</div>
+        <div style="background-color: green; ">Green</div>
+        <div id="yellow" style="background-color: yellow;">Yellow</div>
+        <div style="background-color: orange;">Orange</div>
+        <div style="background-color: red;">Red</div>
+    </div>
+</body>
+</html>

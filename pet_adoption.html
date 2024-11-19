@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      
+      #cont{
+         display: flex;
+         justify-content: space-between;
+         
+    
+
+      }
+.cards{
+   border: 2px solid grey;
+   /* margin: 30px 30px; */
+   height: 450px;
+   width: 300px;
+   border-radius: 8%;
+   align-content: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.cards img{
+   height: 200px;
+   width:280px;
+   border-radius: 8%;
+   margin:8px 10px;
+}
+.item{
+   margin-left: 5px;
+}
+span{
+   color: chocolate;
+}
+@media (orientation:portrait){
+   #cont{
+      flex-wrap: wrap;
+      }
+      .cards{
+         margin-top: 10px;
+
+      }
+      #side{
+         display: none;
+      }
+}
+#side{
+   border: none;
+}
+#side img{
+   height: 400px;
+   width: 400px;
+   border: 2px solid black;
+   border-radius: 20px;
+}
+   </style>
+</head>
+<body>
+   <h4><a href=""><i>adoptme.com</i> </a></h4>
+   <h2>Adopt a <span>Pet</span> Today</h2>
+   <div id="cont">
+      <div id="side">
+         <img src="bg.jpeg" alt="">
+</div>
+   <div class="cards">
+      <img src="cat1.jpeg" alt="">
+     <h4 class="item" >Meet Julie</h4>
+     <p class="item" >Juli's personality is as unique as her appearance. 
+      She possesses a playful and curious nature, always ready to explore
+       her surroundings and investigate every nook and cranny. Whether 
+       it's chasing after a ball of yarn or pouncing on a toy mouse, 
+       Juli's boundless energy never seems to wane.</p>
+   </div>
+   <div class="cards">
+      <img src="dog.jpeg" alt="" >
+      <h4 class="item" >Meet David</h4>
+      <p class="item" >David is  a bundle of energy and playfulness. 
+         He delights in outdoor adventures, eagerly bounding through 
+         fields and chasing after balls. His athletic prowess is evident 
+         as he leaps and bounds with enthusiasm. Whether it's a game of 
+         fetch or a romp through the park, David's zest for life is truly 
+         infectious.</p>
+   </div>
+   <div id="side">
+      <img src="bg.jpeg" alt="">
+   </div>
+</div>
+</body>
+</html>

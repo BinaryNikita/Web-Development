@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .face{
+            height: 300px;
+            width: 300px;
+            border: 2px solid grey;
+            border-radius: 50%;
+            background-color: gold;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .eyes{
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            background-color: rgb(255, 255, 255);
+            border: 12px solid grey;
+            position: relative;
+            border-radius: 50%;
+            padding: 9px;
+            margin-left: 2px;
+            margin-right: 16px;
+            top: 70px;
+            left: 70px;
+        }
+        .eyes div{
+            height: 15px;
+            width: 13px;
+            background-color: black;
+            border-radius: 50%;
+            /* margin-left: 1px; */
+            padding: 2px;
+            transition: padding 1s 0s ease-in-out;
+        }
+        .eyes div:hover{
+            padding: 5px;
+        }
+        .lips{
+            height: 20px;
+            width: 90px;
+            border: 1px solid white;
+            background: rgb(194, 72, 72);
+            position: relative;
+            top: 120px;
+            left: 98px;
+        }
+       
+        #top{
+            border-radius: 50px 50px 50% 50%;
+        }
+        #bottom{
+            border-radius: 100% 100% 60px 60px ;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="face">
+        <div class="eyes"><div></div>
+        </div>
+        <div class="eyes"><div></div></div>
+        <div class="lips" id="top"></div>
+      <div class="lips" id="bottom"></div>
+    </div>
+  
+</body>
+</html>

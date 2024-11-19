@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{  
+            margin-top: 100px;
+            font-family: monospace;
+            
+        }
+        div{
+            height: 80px;
+            width: 200px;
+            text-align: center;
+            color: beige;
+            font-size: 20px;
+            background-color: darkslateblue;
+            border: 4px inset rgb(211, 187, 187);
+            margin: 10px;
+        }
+    
+        div:nth-of-type(2n) {
+            background-color: cornflowerblue;
+        }
+        div:nth-of-type(3n){
+            background-color: rgb(9, 93, 132);
+        }
+        #box1{
+            transform: rotate(10deg);
+        }
+        #box2{
+            transform: scale(0.5, 1);
+        }
+        #box3{
+            transform: translate(250px, 150px);
+        }
+        #box4{
+            transform: skewy(40deg);
+        }
+        #box5{
+            margin-top: 100px;
+            background-color: black;
+            transform: rotate(60deg), translate(150px);
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <div id="box1">Rotate</div>
+    <div id="box2">Scale</div>
+    <div id="box3">Translate</div>
+    <div id="box4">Skew</div>
+    <div id="box5">2</div>
+</section>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body{
+color: rgba(16,17,37,1);
+font-family: "Madimi One", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+header{
+    position:sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    width: 100%;
+    /* height: 10px; */
+  
+}
+.nav{
+    background: linear-gradient(180deg, rgb(113, 120, 255) 0%, rgba(110,188,227,1) 100%);
+
+    /* border: 35px solid rgb(182, 255, 255); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+   
+}
+.logo{
+    align-self: flex-start;
+    /* width: 20%; */
+}
+.nav .logo img{
+    height: 50px;
+    width: 80px;
+}
+
+.navbar{
+    align-self: flex-end;
+    /* width: 80%; */
+}
+.nav-items{
+    display: inline;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+
+}
+main{
+    width: 80%;
+    overflow: scroll;
+    margin: 0 auto;
+
+}
+.intro{
+    font-weight: normal;
+
+}
